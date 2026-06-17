@@ -493,23 +493,23 @@
     <!-- Navigation Header -->
     <nav class="sticky top-0 w-full z-50 bg-white shadow-md border-b border-gray-200/80 h-20 flex items-center"
         id="main-nav">
-        <div class="max-w-[1280px] mx-auto w-full px-container-margin-desktop flex items-center justify-between h-full">
+        <div class="max-w-[1280px] mx-auto w-full px-container-margin-mobile md:px-container-margin-desktop flex items-center justify-between h-full">
             <a href="index.html" class="flex items-center gap-base cursor-pointer shrink-0">
                 <span class="logo-crop inline-block overflow-hidden h-12">
                     <img src="assets/images/logo.png" alt="Zigma Software Logo" class="h-14 w-auto object-contain">
                 </span>
             </a>
-            <div class="hidden lg:flex nav-links items-center gap-md xl:gap-xl font-poppins text-label-md h-full">
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+            <div class="hidden items-center gap-sm xl:gap-md font-poppins text-label-md h-full">
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="index.html">Home</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="about.html">About Us</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="products.html">Products</a>
                 <!-- Services Dropdown container -->
                 <div class="relative group h-full flex items-center">
                     <button
-                        class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent flex items-center gap-xs focus:outline-none whitespace-nowrap">
+                        class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent flex items-center gap-xs focus:outline-none whitespace-nowrap">
                         <span>Services</span>
                         <span
                             class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180 font-bold">expand_more</span>
@@ -534,23 +534,23 @@
                             role="menuitem">Software Support</a>
                     </div>
                 </div>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="customer.html">Customers</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="testimonials.html">Testimonials</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap"
                     href="blog.html">Blogs</a>
                 <a href="contact.html"
-                    class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap">Contact Us</a>
+                    class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap">Contact Us</a>
             </div>
-            <button class="lg:hidden text-[#00497b]" id="mobile-menu-toggle">
+            <button class="text-[#00497b]" id="mobile-menu-toggle">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Menu (Overlay) -->
-    <div class="fixed inset-0 z-[100] bg-[#001D35]/95 hidden lg:hidden flex flex-col items-center justify-center gap-lg text-white text-title-lg font-bold"
+    <div class="fixed inset-0 z-[100] bg-[#001D35]/95 hidden flex flex-col items-center justify-center gap-lg text-white text-title-lg font-bold"
         id="mobile-menu">
         <button class="absolute top-6 right-6 text-white" id="mobile-menu-close">
             <span class="material-symbols-outlined text-[32px]">close</span>
@@ -574,8 +574,7 @@
         <a class="hover:text-secondary transition-colors" href="customer.html">Customers</a>
         <a class="hover:text-secondary transition-colors" href="testimonials.html">Testimonials</a>
         <a class="hover:text-secondary transition-colors" href="blog.html">Blogs</a>
-        <a href="contact.html"
-            class="bg-[#EC3F43] text-white px-xl py-md rounded-full font-semibold hover:brightness-110 transition-all mt-md">Contact Us</a>
+        <a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a>
     </div>
 
     <main>
@@ -613,9 +612,9 @@
 
 
         <!-- Welcome Section -->
-        <section class="py-24 bg-amber-500/5 overflow-hidden">
-            <div
-                class="px-margin-desktop max-w-container-max mx-auto text-center relative transition-all duration-1000 opacity-100 translate-y-0">
+    <section class="py-24 bg-amber-500/5 overflow-hidden">
+        <div
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center relative transition-all duration-1000 opacity-100 translate-y-0">
                 <div class="absolute -top-10 left-0 w-32 h-32 bg-secondary/5 rounded-full blur-3xl"></div>
                 <div class="absolute -bottom-10 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
                 <h1
@@ -625,7 +624,7 @@
                     class="text-secondary font-semibold text-lg md:text-[24px] lg:text-[28px] mb-8 max-w-5xl mx-auto leading-snug mt-2">
                     Your Trusted Digital Solution Partner
                 </h2>
-                <p class="text-lg text-justify text-on-surface-variant max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
+                <p class="text-base sm:text-lg text-left sm:text-justify text-on-surface-variant max-w-4xl mx-auto mb-12 leading-relaxed font-medium" style="word-break: break-word; overflow-wrap: break-word; hyphens: auto;">
                     We, Zigma Software Erode, are a professional Organization comprising a set of dedicated software
                     professionals around 10 plus, ever striving towards perfection from 1991 onwards. Doing Tailor-made
                     software projects for large, medium Manufacturing entities, trading houses, various product
@@ -635,24 +634,24 @@
                     Booking (Travels) Systems, Bus Collection Maintenance Systems etc.
                 </p>
                 <a href="about.html"
-                    class="px-12 py-5 bg-primary text-white font-bold rounded-2xl hover:bg-secondary transition-all shadow-[0_20px_50px_rgba(0,52,97,0.3)] flex items-center gap-3 mx-auto transform hover:-translate-y-1 w-fit">
+                    class="px-6 md:px-12 py-3 md:py-5 bg-primary text-white text-sm md:text-base font-bold rounded-2xl hover:bg-secondary transition-all shadow-[0_20px_50px_rgba(0,52,97,0.3)] flex items-center gap-3 mx-auto transform hover:-translate-y-1 w-fit whitespace-nowrap">
                     Know More About Us
                     <span class="material-symbols-outlined">info</span>
                 </a>
             </div>
         </section>
 
-        <!-- Services Grid (Vibrant Desktop) -->
-        <section class="py-24 bg-white">
-            <div
-                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+    <!-- Services Grid (Vibrant Desktop) -->
+    <section class="py-24 bg-white">
+        <div
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
                 <div class="text-center mb-16">
                     <span
-                        class="text-4xl font-black text-primary mb-2 block">OUR
+                        class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2 block">OUR
                         SERVICES</span>
                     <h2 class="text-secondary font-semibold text-lg md:text-xl mt-2">Solutions for Every Need</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
                     <!-- Service 1: Blue -->
                     <div
                         class="vibrant-card color-bg-blue p-8 rounded-[2.5rem] border border-blue-100 flex flex-col h-full">
@@ -661,7 +660,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">analytics</span>
                         </div>
-                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Business Analytics</h3>
+                        <h3 class="font-title-md text-lg sm:text-xl text-primary mb-4 font-bold">Business Analytics</h3>
                         <p class="text-on-surface-variant mb-8 flex-grow">Data driven insights to improve performance
                             and support smart decisions.</p>
                         <a class="inline-flex items-center gap-2 text-blue-600 font-black hover:gap-4 transition-all"
@@ -676,7 +675,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">smartphone</span>
                         </div>
-                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Mobile App Development</h3>
+                        <h3 class="font-title-md text-lg sm:text-xl text-primary mb-4 font-bold">Mobile App Development</h3>
                         <p class="text-on-surface-variant mb-8 flex-grow">Innovative and user friendly apps for Android
                             &amp; iOS platforms.</p>
                         <a class="inline-flex items-center gap-2 text-teal-600 font-black hover:gap-4 transition-all"
@@ -691,7 +690,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">groups</span>
                         </div>
-                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">HRMS &amp; Payroll</h3>
+                        <h3 class="font-title-md text-lg sm:text-xl text-primary mb-4 font-bold">HRMS &amp; Payroll</h3>
                         <p class="text-on-surface-variant mb-8 flex-grow">Streamline employee management, payroll and
                             compliance.</p>
                         <a class="inline-flex items-center gap-2 text-purple-600 font-black hover:gap-4 transition-all"
@@ -706,7 +705,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">hub</span>
                         </div>
-                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Social Media Marketing</h3>
+                        <h3 class="font-title-md text-lg sm:text-xl text-primary mb-4 font-bold">Social Media Marketing</h3>
                         <p class="text-on-surface-variant mb-8 flex-grow">Strategic social media solutions to grow your
                             brand online.</p>
                         <a class="inline-flex items-center gap-2 text-red-600 font-black hover:gap-4 transition-all"
@@ -717,16 +716,16 @@
             </div>
         </section>
 
-        <!-- Why Choose Us -->
-        <section class="py-20 bg-white">
-            <div class="px-margin-desktop max-w-container-max mx-auto text-center">
-                <h1 class="text-4xl font-black text-primary mb-2 block">WHY
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2 block">WHY
                     CHOOSE US</h1>
 
                 <h2 class="text-secondary font-semibold text-xl md:text-2xl mt-2">Why our clients trust us</h2><br>
 
             </div>
-            <div class="px-margin-desktop max-w-container-max mx-auto">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <li class="vibrant-card color-bg-blue p-8 rounded-[2.5rem] border border-blue-100 flex flex-col">
                         <div
@@ -734,7 +733,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">analytics</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Business Analytics Software</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Business Analytics Software</h4>
                         <p class="text-on-surface-variant flex-grow">Business Analytical Software helps organizations
                             analyze data to gain insights, improve decision-making, and identify growth opportunities.
                         </p>
@@ -745,7 +744,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">public</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Creative Website Solutions</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Creative Website Solutions</h4>
                         <p class="text-on-surface-variant flex-grow">We design and develop fast, responsive, and
                             visually appealing websites that reflect your brand identity.</p>
                     </li>
@@ -755,7 +754,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">search</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Search Engine Growth Strategies</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Search Engine Growth Strategies</h4>
                         <p class="text-on-surface-variant flex-grow">Our SEO techniques help your business rank higher
                             and attract quality organic traffic.</p>
                     </li>
@@ -765,7 +764,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">campaign</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Powerful Social Media Branding</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Powerful Social Media Branding</h4>
                         <p class="text-on-surface-variant flex-grow">We manage and grow your social presence with
                             engaging content and strategic marketing.</p>
                     </li>
@@ -776,7 +775,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">smartphone</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Smart Mobile App Solutions</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Smart Mobile App Solutions</h4>
                         <p class="text-on-surface-variant flex-grow">We build intuitive Android and iOS apps that
                             enhance user experience and expand your digital reach.</p>
                     </li>
@@ -787,7 +786,7 @@
                             <span class="material-symbols-outlined text-4xl"
                                 style="font-variation-settings: &quot;FILL&quot; 1;">support_agent</span>
                         </div>
-                        <h4 class="text-primary font-bold text-lg mb-3">Reliable Support &amp; Maintenance</h4>
+                        <h4 class="text-primary font-bold text-base sm:text-lg mb-3">Reliable Support &amp; Maintenance</h4>
                         <p class="text-on-surface-variant flex-grow">Ongoing support and maintenance to keep your
                             systems secure, up-to-date, and running smoothly.</p>
                     </li>
@@ -795,15 +794,15 @@
             </div>
         </section>
 
-        <!-- Channel / Solution Partner -->
-        <section id="partners-section" class="py-16 bg-white border-b border-gray-100">
-            <div class="px-margin-desktop max-w-container-max mx-auto text-center mb-10">
+    <!-- Channel / Solution Partner -->
+    <section id="partners-section" class="py-16 bg-white border-b border-gray-100">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-10">
                 <span
-                    class="text-4xl font-black text-primary mb-2 block">CHANNEL
+                    class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2 block">CHANNEL
                     / SOLUTION PARTNER</span>
                 <h2 class="text-secondary font-semibold text-xl md:text-2xl mt-2">Our Trusted Partners</h2>
             </div>
-            <div class="px-margin-desktop max-w-container-max mx-auto">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <div
                     class="partners-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
                     <div
@@ -870,12 +869,12 @@
             </div>
         </section>
 
-        <!-- Products Grid (Vibrant Desktop) -->
-        <section class="py-24 bg-white">
-            <div
-                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+    <!-- Products Grid (Vibrant Desktop) -->
+    <section class="py-24 bg-white">
+        <div
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-black text-primary mb-2">OUR PRODUCTS</h2>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">OUR PRODUCTS</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <!-- Product 1: Amber Tint -->
@@ -885,10 +884,10 @@
                             <img alt="Zigfas Enterprise" class="w-full h-full object-cover"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtxaQYmiABcKNM5zQxdMzxggNwMQGptNCS5G81UVOt3OIgkubiuUasebXoT76blw2OGUOp9jyPQffiLm6IFea5AZ2kKTlq-KMpvjzo_zhXIQvdCCP2rZ5yJeqKhhy5pdbLM9Uz_mBY6MnyaBMrVr4kw8oMOLTJ74FrHELdCqmQp7IYXIwAoCdru2JghHtzJyRdcyJNBFpRkv_KjlFXfu4do431jVqoljg4dKki7CYKMh8RK16uOt1MoKUAUW3HvKtCMGrxi6dCnxk">
                         </div>
-                        <h4 class="text-2xl font-black text-primary mb-4">Zigfas Enterprise</h4>
+                        <h4 class="text-xl sm:text-2xl font-black text-primary mb-4">Zigfas Enterprise</h4>
                         <p class="text-on-surface-variant px-4 mb-8 font-medium">Complete Accounting, Billing, Inventory
                             and ERP solution for large businesses and industries.</p>
-                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                        <a class="px-6 md:px-10 py-3 bg-white text-primary border-2 border-primary rounded-full text-sm md:text-base font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4 whitespace-nowrap"
                             href="products.html">Read More</a>
                     </div>
                     <!-- Product 2: Blue Tint -->
@@ -898,10 +897,10 @@
                             <img alt="Textile Show Rooms" class="w-full h-full object-cover"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbB_zdQLHBhrwYW9gkAcRhSlwkgeOz2VbnpVB7Tb8lJEMdrnKXD3NDD_zQXtMbRZnU2nf7b4jTLG61de6SAnNi4qEgdov91XDqFnoelgO5VBz70ZbLLXAWcqiNbbPaFFPflsKEsKj8fI8XR-pYY1InuDOlG9Rh2bTH_8ToEWfR4MYMFXGkU4-ppz1k7D4mtaOGDZvk2mHTi4FE1K19we_IBwjrju4STRQ6lp4SWR_5Obo1mEKe4em2JRtDv8vRDadGHq89KurydhA">
                         </div>
-                        <h4 class="text-2xl font-black text-primary mb-4">Textile Show Rooms</h4>
+                        <h4 class="text-xl sm:text-2xl font-black text-primary mb-4">Textile Show Rooms</h4>
                         <p class="text-on-surface-variant px-4 mb-8 font-medium">Bar Code enabled solution with Counter
                             Sales and Credit Sales modules for textile showrooms.</p>
-                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                        <a class="px-6 md:px-10 py-3 bg-white text-primary border-2 border-primary rounded-full text-sm md:text-base font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4 whitespace-nowrap"
                             href="products.html">Read More</a>
                     </div>
                     <!-- Product 3: Purple Tint -->
@@ -911,20 +910,20 @@
                             <img alt="Website Design &amp; Hosting" class="w-full h-full object-cover"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiA-58kBoYG6TyLzF3OfSDrRo6FS5d-LtGYkyAJovCIIa8I2yPcLWzexBl9WrnLPythcfibu-UksjrBHc64hudW6QzsUff1l7a0QEuix_D6bxkxlzgB-YtKDPzDDRwDpZDfmztu1fiWocvvQv6TF4wHqoOXagTZutbgkJZBiU9f_VKYIjeJiLZXAhVU05EBXslHFrhH9RNQeLMLg6I0FlMpBF4q-MBbFN8zaUI6kqO9BkFhWOsOOKhEoEqaXmxoj2kfCgdOvVEp_Y">
                         </div>
-                        <h4 class="text-2xl font-black text-primary mb-4">Website Design &amp; Hosting</h4>
+                        <h4 class="text-xl sm:text-2xl font-black text-primary mb-4">Website Design &amp; Hosting</h4>
                         <p class="text-on-surface-variant px-4 mb-8 font-medium">Professional website designing and
                             hosting services to grow your online presence.</p>
-                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                        <a class="px-6 md:px-10 py-3 bg-white text-primary border-2 border-primary rounded-full text-sm md:text-base font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4 whitespace-nowrap"
                             href="web-development.html">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Key Features Section (6 Column Grid) -->
-        <section class="py-24 bg-teal-50">
-            <div
-                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
-                <h2 class="text-4xl font-black text-primary mb-20 text-center">KEY FEATURES OF OUR SOFTWARE</h2>
+    <!-- Key Features Section (6 Column Grid) -->
+    <section class="py-24 bg-teal-50">
+        <div
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-12 md:mb-20 text-center">KEY FEATURES OF OUR SOFTWARE</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <!-- Feature 1 -->
                     <div
@@ -934,7 +933,7 @@
                             <img src="assets/images/features/wholesale_business.png" alt="Wholesale Business"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Wholesale
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Wholesale
                             Business</span>
                     </div>
                     <!-- Feature 2 -->
@@ -945,7 +944,7 @@
                             <img src="assets/images/features/garments_unit.png" alt="Garments Unit"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Garments Unit</span>
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Garments Unit</span>
                     </div>
                     <!-- Feature 3 -->
                     <div
@@ -955,7 +954,7 @@
                             <img src="assets/images/features/retail_textile.png" alt="Retail Textile Business"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Retail Textile
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Retail Textile
                             Business</span>
                     </div>
                     <!-- Feature 4 -->
@@ -966,7 +965,7 @@
                             <img src="assets/images/features/fmcg_department.png" alt="FMCG Agencies & Dept Stores"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">FMCG Agencies & Dept
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">FMCG Agencies & Dept
                             Stores</span>
                     </div>
                     <!-- Feature 5 -->
@@ -977,7 +976,7 @@
                             <img src="assets/images/features/pesticides_fertilizers.png" alt="Pesticides & Fertilizers"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Pesticides &
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Pesticides &
                             Fertilizers</span>
                     </div>
                     <!-- Feature 6 -->
@@ -988,7 +987,7 @@
                             <img src="assets/images/features/paints_automobiles.png"
                                 alt="Paints, Hardware & Automobiles" class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Paints, Hardware &
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Paints, Hardware &
                             Automobiles</span>
                     </div>
                     <!-- Feature 7 -->
@@ -999,7 +998,7 @@
                             <img src="assets/images/features/home_appliances.png" alt="Home Appliances"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Home Appliances</span>
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Home Appliances</span>
                     </div>
                     <!-- Feature 8 -->
                     <div
@@ -1009,7 +1008,7 @@
                             <img src="assets/images/features/medical_surgical.png" alt="Medical Shops & Surgical"
                                 class="w-full h-full object-cover">
                         </div>
-                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Medical Shops &
+                        <span class="text-primary font-extrabold text-[11px] sm:text-sm uppercase leading-tight">Medical Shops &
                             Surgical</span>
                     </div>
                 </div>
@@ -1019,7 +1018,7 @@
         <section class="py-24 bg-white relative overflow-hidden">
             <div
                 class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
-                <h2 class="text-4xl font-black text-primary mb-16 text-center">OUR CLIENTS</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-10 md:mb-16 text-center">OUR CLIENTS</h2>
 
                 <div class="relative max-w-[1100px] mx-auto px-12">
                     <!-- Left Arrow -->
@@ -1151,7 +1150,7 @@
     </main>
     <!-- Footer -->
     <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-20">
             <div class="space-y-8">
                 <a href="index.html" class="inline-block"><img src="assets/images/logo.png" alt="Zigma Software Logo"
                         class="h-14 w-auto"></a>
@@ -1239,7 +1238,7 @@
             </div>
         </div>
         <div
-            class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+            class="border-t border-white/5 pt-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
             <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
             <div class="flex gap-8">
                 <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
@@ -1318,24 +1317,11 @@
                 }
 
                 if (isActive) {
-                    if (link.classList.contains('rounded-full')) {
-                        // Mobile Contact Us button when active
-                        link.classList.add('bg-[#EC3F43]', 'text-white', 'hover:brightness-110');
-                    } else {
-                        // Other mobile items when active
-                        link.classList.add('bg-[#EC3F43]', 'text-white', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
-                        link.classList.remove('hover:text-secondary');
-                    }
+                    link.classList.add('bg-[#EC3F43]', 'text-white', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+                    link.classList.remove('hover:text-secondary');
                 } else {
-                    if (link.classList.contains('rounded-full') && href && href.endsWith('contact.html')) {
-                        // Mobile Contact Us button when inactive (bordered layout)
-                        link.classList.remove('bg-[#EC3F43]', 'hover:brightness-110');
-                        link.classList.add('border', 'border-white/20', 'text-white', 'hover:bg-white/10');
-                    } else {
-                        // Other mobile items when inactive
-                        link.classList.remove('bg-[#EC3F43]', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
-                        link.classList.add('hover:text-secondary');
-                    }
+                    link.classList.remove('bg-[#EC3F43]', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+                    link.classList.add('hover:text-secondary');
                 }
             });
         });
@@ -1481,6 +1467,7 @@
             startAutoplay();
         })();
     </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

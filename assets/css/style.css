@@ -34,12 +34,25 @@ body {
   white-space: nowrap;
 }
 
-@media (min-width: 1024px) {
-  #main-nav .nav-links {
-    display: flex;
+/* Desktop nav: hidden below wide desktop, shown at 1400px+ */
+@media (max-width: 1399px) {
+  #main-nav > div > div.items-center.gap-sm.font-poppins {
+    display: none !important;
   }
   #mobile-menu-toggle {
-    display: none;
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  #main-nav > div > div.items-center.gap-sm.font-poppins {
+    display: flex !important;
+  }
+  #mobile-menu-toggle {
+    display: none !important;
+  }
+  #mobile-menu {
+    display: none !important;
   }
 }
 
@@ -128,4 +141,107 @@ body {
 }
 .partner-logo-card:hover img {
   transform: scale(1.05);
+}
+
+/* ========================================
+   Mobile Responsiveness Overrides
+   ======================================== */
+
+@media (max-width: 639px) {
+  .text-justify {
+    text-align: left;
+  }
+
+  section.py-24 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  section.py-20 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  section.py-16 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .px-margin-desktop {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .vibrant-card {
+    padding: 1rem !important;
+  }
+
+  .vibrant-card .w-16.h-16 {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .vibrant-card .material-symbols-outlined.text-4xl {
+    font-size: 1.5rem;
+  }
+
+  .vibrant-card .rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .vibrant-card p,
+  .vibrant-card .text-on-surface-variant {
+    font-size: 0.875rem;
+  }
+
+  .vibrant-card .mb-6 {
+    margin-bottom: 0.75rem;
+  }
+
+  .vibrant-card .mb-8 {
+    margin-bottom: 1rem;
+  }
+
+  .partner-logo-card {
+    padding: 0.75rem !important;
+    height: 5rem !important;
+  }
+
+  .clients-container {
+    gap: 16px;
+  }
+
+  .text-primary.font-extrabold {
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  footer .text-lg {
+    font-size: 0.9375rem;
+  }
+
+  footer .text-xl {
+    font-size: 1.125rem;
+  }
+
+  footer .gap-12 {
+    gap: 2rem;
+  }
+}
+
+/* ========================================
+   JavaScript-Driven Mobile Adjustments
+   Set by main.js via data-mobile on <html>
+   ======================================== */
+
+html[data-mobile] main section p {
+  font-size: 0.9375rem;
+}
+
+html[data-mobile] footer p {
+  font-size: 0.875rem;
+}
+
+html[data-mobile] .text-on-surface-variant {
+  font-size: 0.875rem;
 }

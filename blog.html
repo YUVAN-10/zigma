@@ -19,7 +19,7 @@
     rel="stylesheet" />
   <!-- Tailwind -->
   <script src="assets/js/tailwind.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -181,13 +181,13 @@
         <div class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80"></div>
       </div>
       <div class="relative z-10 text-white">
-        <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Insights &amp; Innovation</h1>
+        <h1 class="font-display-lg text-4xl sm:text-5xl md:text-6xl mb-sm text-shadow-sm">Insights &amp; Innovation</h1>
         <p class="font-label-md opacity-90"><a href="index.html" class="hover:underline">Home</a> <span
             class="mx-xs">&gt;</span> Blogs</p>
       </div>
     </section>
     <!-- 4. Blog Grid -->
-    <section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+    <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
         <!-- Blog Card 1 -->
         <article class="bg-white rounded-[20px] overflow-hidden premium-shadow hover-lift group flex flex-col h-full">
@@ -267,7 +267,7 @@
   </main>
   <!-- Footer -->
   <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-20">
       <div class="space-y-8">
         <a href="index.html" class="inline-block"><img src="assets/images/logo.png" alt="Zigma Software Logo"
             class="h-14 w-auto"></a>
@@ -340,7 +340,7 @@
       </div>
     </div>
     <div
-      class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+      class="border-t border-white/5 pt-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
       <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
       <div class="flex gap-8">
         <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
@@ -379,6 +379,7 @@
     });
   </script>
   <script src="assets/js/nav.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

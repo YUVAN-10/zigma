@@ -15,17 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <!-- Navigation Header -->
     <nav class="sticky top-0 w-full z-50 bg-white shadow-md border-b border-gray-200/80 h-20 flex items-center" id="main-nav">
-        <div class="max-w-[1280px] mx-auto w-full px-container-margin-desktop flex items-center justify-between h-full">
+        <div class="max-w-[1280px] mx-auto w-full px-container-margin-mobile md:px-container-margin-desktop flex items-center justify-between h-full">
             <a href="index.html" class="flex items-center gap-base cursor-pointer shrink-0">
                 <img src="assets/images/logo.png" alt="Zigma Software Logo" class="h-14 w-auto object-contain">
             </a>
-            <div class="hidden lg:flex items-center gap-md xl:gap-xl font-poppins text-label-md h-full">
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="index.html">Home</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="about.html">About Us</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="products.html">Products</a>
+            <div class="hidden items-center gap-sm xl:gap-md font-poppins text-label-md h-full">
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="index.html">Home</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="about.html">About Us</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="products.html">Products</a>
                 <!-- Services Dropdown container -->
                 <div class="relative group h-full flex items-center">
-                    <button class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent flex items-center gap-xs focus:outline-none whitespace-nowrap">
+                    <button class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent flex items-center gap-xs focus:outline-none whitespace-nowrap">
                         <span>Services</span>
                         <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180 font-bold">expand_more</span>
                     </button>
@@ -38,19 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="software-support.html" class="hidden px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap" role="menuitem">Software Support</a>
                     </div>
                 </div>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="customer.html">Customers</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="testimonials.html">Testimonials</a>
-                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap" href="blog.html">Blogs</a>
-                <a href="contact.html" class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap">Contact Us</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="customer.html">Customers</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="testimonials.html">Testimonials</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap" href="blog.html">Blogs</a>
+                <a href="contact.html" class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-sm py-xs rounded font-bold bg-transparent whitespace-nowrap">Contact Us</a>
             </div>
-            <button class="lg:hidden text-[#00497b]" id="mobile-menu-toggle">
+            <button class="text-[#00497b]" id="mobile-menu-toggle">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Menu (Overlay) -->
-    <div class="fixed inset-0 z-[100] bg-[#001D35]/95 hidden lg:hidden flex flex-col items-center justify-center gap-lg text-white text-title-lg font-bold" id="mobile-menu">
+    <div class="fixed inset-0 z-[100] bg-[#001D35]/95 hidden flex flex-col items-center justify-center gap-lg text-white text-title-lg font-bold" id="mobile-menu">
         <button class="absolute top-6 right-6 text-white" id="mobile-menu-close">
             <span class="material-symbols-outlined text-[32px]">close</span>
         </button>
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a class="hover:text-secondary transition-colors" href="customer.html">Customers</a>
         <a class="hover:text-secondary transition-colors" href="testimonials.html">Testimonials</a>
         <a class="hover:text-secondary transition-colors" href="blog.html">Blogs</a>
-        <a href="contact.html" class="bg-[#EC3F43] text-white px-xl py-md rounded-full font-semibold hover:brightness-110 transition-all mt-md">Contact Us</a>
+        <a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a>
     </div>
     `;
 
@@ -141,24 +141,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (isActive) {
-            if (link.classList.contains('rounded-full')) {
-                // Mobile Contact Us button when active
-                link.classList.add('bg-[#EC3F43]', 'text-white', 'hover:brightness-110');
-            } else {
-                // Other mobile items when active
-                link.classList.add('bg-[#EC3F43]', 'text-white', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
-                link.classList.remove('hover:text-secondary');
-            }
+            link.classList.add('bg-[#EC3F43]', 'text-white', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+            link.classList.remove('hover:text-secondary');
         } else {
-            if (link.classList.contains('rounded-full') && href && href.endsWith('contact.html')) {
-                // Mobile Contact Us button when inactive (bordered layout)
-                link.classList.remove('bg-[#EC3F43]', 'hover:brightness-110');
-                link.classList.add('border', 'border-white/20', 'text-white', 'hover:bg-white/10');
-            } else {
-                // Other mobile items when inactive
-                link.classList.remove('bg-[#EC3F43]', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
-                link.classList.add('hover:text-secondary');
-            }
+            link.classList.remove('bg-[#EC3F43]', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+            link.classList.add('hover:text-secondary');
         }
     });
 });
