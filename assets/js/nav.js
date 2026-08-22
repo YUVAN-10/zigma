@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span> mano@zigmasoftware.in</span>
         </div>
         <div class="flex items-center gap-md">
-            <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span> +91 99941 40474</span>
+            <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span> +91 99949 96454</span>
         </div>
     </div>
 
