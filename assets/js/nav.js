@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Top Contact Us Bar -->
     <div class="hidden md:flex bg-[#001D35] text-white h-10 px-container-margin-desktop items-center justify-between text-label-sm font-label-sm relative z-50 border-b border-white/10">
         <div class="flex items-center gap-md">
-            <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span> mano@zigmasoftware.in</span>
+            <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span> info@zigmasoftware.com</span>
         </div>
         <div class="flex items-center gap-md">
             <span class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span> +91 99949 96454</span>
